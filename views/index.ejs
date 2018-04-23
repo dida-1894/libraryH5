@@ -56,6 +56,7 @@
     	或写在head标签中的style样式里
     -->
     <div class="loadPage" style="width: 100%; height: 100%;">
+			<div class="ldbg"><img src="images/cbg.png" alt=""><p></p></div>
     </div>
     <!-- loading END -->
 
@@ -252,7 +253,7 @@
     });
     var lddeg = 0;
     loader.process(function(){
-    	console.log(this.processNum);
+    	// console.log(this.processNum);
     	pros = this.processNum;
     	lddeg = (pros/100)*360;
         $('.ldbg img').css({'transform':'rotate('+lddeg+'deg)'});
@@ -267,85 +268,9 @@
 
 
 /************************* 微信分享功能 ********************************/
-    var sharethis=function(){
-    var server = 'https://www.jiandoukeji.com/codes/jiandou/game.php/Home/Share/JDOU_shareWx/';
-    // var server = 'https://www.h5-share.com/h5share.php/Home/Share/JDOU_shareWx_niu/';
-    // var server = 'https://www.h5-share.com/h5share.php/Home/Shareworld/JDOU_shareWx_niu/';
 
-    var currenturl = window.location.href;
-    var postData={ url:currenturl}
-          $.ajax({
-                type: "POST",
-                url: server,
-                data: postData,
-                async: true,
-                dataType: "json",
-                success: function (result) {
-                        //分享功能
-                        wx.config({
-                            debug: false,
-                            appId: result.appId,
-                            timestamp: result.timestamp,
-                            nonceStr: result.nonceStr,
-                            signature: result.signature,
-                            jsApiList: [
-                                'checkJsApi',
-                                'onMenuShareTimeline',
-                                'onMenuShareAppMessage',
-                                'onMenuShareQQ',
-                                'onMenuShareWeibo'
-                            ]
-                        });
-                        wechatReady();
-                },
-                error: function () {
-                  //window.alert("系统错误，请稍后再试");
-                }
-            });
-
-    }
-
-	var shareTitle ='北区图书馆';
-	var imgUrl = 'https://www.jiandoukeji.com/h5/2018/ala/project/jiandou/life/images/thumb.png';
-	var shareDesc = '在这个一片蝉鸣的季节，我来到了这这所学校...';
-	var shareUrl = 'https://www.jiandoukeji.com/h5/2018/ala/project/jiandou/life/index.html';
-
-	function wechatReady() {
-	    wx.ready(function () {
-
-	        var appMessageShareData = {
-	            title:shareTitle,
-	            desc: shareDesc,
-	            link: shareUrl,
-	            imgUrl:imgUrl
-	         };
-	         wx.onMenuShareAppMessage(appMessageShareData);
-	         wx.onMenuShareTimeline(appMessageShareData);
-	         wx.onMenuShareQQ(appMessageShareData);
-	         wx.onMenuShareWeibo(appMessageShareData);
-	    })
-	    wx.error(function (res) {
-	         // alert(res.errMsg);
-	    });
-	}
-
-	sharethis();
 </script>
 
 <script type="text/javascript" src="javascripts/js.js?v=1.3"></script>
-
-<!--腾讯大数据统计代码 BEGIN-->
-<script>
-var _mtac = {};
-(function() {
-    var mta = document.createElement("script");
-    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.2";
-    mta.setAttribute("name", "MTAH5");
-    mta.setAttribute("sid", "500602908");
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(mta, s);
-})();
-</script>
-<!--腾讯大数据统计代码 END-->
 </body>
 </html>
