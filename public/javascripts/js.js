@@ -29,7 +29,6 @@ function startAct(){
         $(".fs").css({"transform":"translateZ(0) scale(1)","opacity":"1"});
         $(".text1").show();
         $(".text1 p").addClass("fadeInUp animated2");
-        $(".text0").addClass("fadeOutDown animated");
     },1000);
     setTimeout(function(){
         $(".starBtn").css({"top":"10%","opacity":"1"});
@@ -55,6 +54,7 @@ function firstAct(){
             $(".clock").css({"transition-duration":"0s"});
             $(".clock").css({"transform":"translateZ(0) rotate(30deg)"});
             $(".slideTip").fadeIn(500);
+            $(".text0").fadeOut(500);
         },500);
         starFlag=0;
     }
