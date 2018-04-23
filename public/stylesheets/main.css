@@ -408,19 +408,7 @@ div {
   left: 0;
   z-index: 999;
 }
-.gesture .starBtn {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -20%;
-  z-index: 99;
-  background-image: url(../images/star.png);
-  left: 50%;
-  margin-left: -10px;
-  transition-duration: 2s;
-  display: none;
-  opacity: 0;
-}
+
 .role {
   position: absolute;
   z-index: 2;
@@ -1607,7 +1595,6 @@ div {
   display: block;
   width: 20px;
   height: 20px;
-  background: url(../images/star.png);
   top: 100px;
   left: 400px;
   position: relative;
