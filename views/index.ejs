@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta name="format-detection"content="telephone=no">
     <title>北区图书馆</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
 	<link rel="stylesheet" href="stylesheets/master.css">
 
@@ -76,7 +76,7 @@
 		</div>
 		<!-- 这是demo用的类名和id  后续要改 -->
 		<div class="gesture">
-			<div class="starBtn pulse animated infinite"></div>
+			<!-- <div class="starBtn pulse animated infinite"></div> -->
 		</div>
 
 		<div class="starfield" id="starfield1">
@@ -104,6 +104,8 @@
 				<!-- spring -->
 				<div class="bigGrass"></div>
 				<div class="zhang"></div>
+				<div class="springFler F1"></div>
+				<div class="springFlerRit F2"></div>
 				<div class="springPink"></div>
 				<div class="springWhilte"></div>
 				<!-- winter -->
@@ -112,8 +114,10 @@
 				<div class="winterSnow"></div>
 				<!-- library -->
 				<div class="library"></div>
+				<div class="springFler"></div>
 				<div class="springLibGrass"></div>
 				<div class="springFler"></div>
+				<div class="springFlerRit"></div>
 				<!-- 带孙女玩 -->
 				<!-- 变老逝去 -->
 				<!-- <div class="night2"></div> -->
@@ -137,10 +141,7 @@
 		<div class="role role1"></div>
 
 		<div class="ostars">
-	        <div class="ostar"></div>
-	        <div class="ostar pink"></div>
-	        <div class="ostar blue"></div>
-	        <div class="ostar yellow"></div>
+
 					<div class="endPage"></div>
 	    </div>
 	    <div class="text text13"><p>游荡在交大的一年</p><p>美丽的风景走过</p><p>唯有在此我停下脚步</p></div>
@@ -204,7 +205,6 @@
   	/*图片预加载*/
     var loader=new ImagesLoader();
     loader.loadImages([
-		'autumn.png',
 		'clock.png',
 		'clock12.png',
 		'musicoff.png',
@@ -216,35 +216,22 @@
 		'spring/springPink.png',
 		'spring/springWhilte.png',
 		'spring/springLibGrass.png',
-		'spring/springRole1.png',
-		'spring/springRole2.png',
-		'spring/springRole3.png',
+		'spring/sprite.png',
 		'spring/springZhang.png',
 		'spring/roleBack.png',
 		'spring/bigGrass.png',
 		'summer/summerTree.png',
 		'summer/summerGrass.png',
 		'summer/summerCloud.png',
-		'summer/summerRole1.png',
-		'summer/summerRole2.png',
-		'summer/summerRole3.png',
-		'summer/summerRole4.png',
-		'summer/summerRole5.png',
-		'autumn/autumnGrass.png',
-		'autumn/autumnRole1.png',
-		'autumn/autumnRole2.png',
-		'autumn/autumnRole3.png',
-		'autumn/autumnRole4.png',
-		'autumn/autumnRole5.png',
+		'summer/sprite.png',
 		'autumn/fails.png',
 		'autumn/Train.png',
+		'autumn/sprite.png',
 		'winter/bg.jpg',
 		'winter/winterSnow.png',
 		'winter/winterTree.png',
 		'winter/winterSport.png',
-		'winter/winterRole1.png',
-		'winter/winterRole2.png',
-		'winter/winterRole3.png'
+		'winter/sprite.png'
 	],'hf/')
     loader.complete(function(){
 		    setTimeout(function(){

@@ -104,7 +104,7 @@
   height: 480px;
   z-index: 5;
   left: 2800px;
-  bottom: 300px;
+  bottom: 250px;
 }
 .winterSnow{
   background-image: url(../hf/winter/winterSnow.png);
@@ -152,12 +152,37 @@
   width: 1000px;
   height: 280px;
   left: 5800px;
-  bottom: 80px;
+  bottom: 100px;
   z-index: 5;
+}
+.springFler.F1{
+  left: 4600px;
+}
+.springFlerRit.F2{
+  left: 5000px;
+  top:-20px;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 .springFler{
   background-image: url(../hf/spring/springFler.png);
-
+  left: 5800px;
+  width: 400px;
+  height: 250px;
+  top: 0px;
+  z-index: 5;
+  -webkit-transform:rotate(10deg);
+  transform: rotate(10deg);
+}
+.springFlerRit{
+  background-image: url(../hf/spring/springFlerRit.png);
+  width: 400px;
+  height: 250px;
+  top: 0px;
+  z-index: 5;
+  left: 6250px;
+  -webkit-transform:rotate(5deg);
+  transform: rotate(5deg);
 }
 .endPage{
   background-image: url(../images/endPage.jpg);

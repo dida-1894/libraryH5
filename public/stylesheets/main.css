@@ -415,26 +415,31 @@ div {
   width: 133px;
   height: 255px;
   left: 38%;
-  /* width: 200px; */
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% auto;
+  overflow: hidden;
   top: 43%;
   transform: scale(0);
   transition-duration: 1.5s;
   opacity: 0;
 }
 .role1 {
-  -webkit-animation: role1 1s linear infinite;
+  background: url(../hf/summer/sprite.png) no-repeat;
+  background-size: 500% 100%;
+  -webkit-animation: role1 0.5s steps(4) infinite;
 }
 .role2 {
-  -webkit-animation: role2 1s linear infinite;
+  background: url(../hf/autumn/sprite.png) no-repeat;
+  background-size: 500% 100%;
+  -webkit-animation: role2 0.5s steps(4) infinite;
 }
 .role3 {
-  -webkit-animation: role3 1s linear infinite;
+  background: url(../hf/winter/sprite.png) no-repeat;
+  background-size: 500% 100%;
+  -webkit-animation: role3 0.5s steps(4) infinite;
 }
 .role4 {
-  -webkit-animation: role4 1s linear infinite;
+  background: url(../hf/spring/sprite.png) no-repeat;
+  background-size: 500% 100%;
+  -webkit-animation: role4 0.5s steps(4) infinite;
 }
 .role5{
   background-image: url(../hf/spring/roleBack.png);
@@ -461,8 +466,8 @@ div {
 }
 .starfield div {
   position: absolute;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  /* -webkit-transform: translateZ(0); */
+  /* transform: translateZ(0); */
 }
 .starfield div img {
   position: absolute;
@@ -644,7 +649,7 @@ div {
   margin-left: -80px;
   display: none;
   z-index: 1000;
-  top: 46%;
+  top: 26%;
   color: #ccc;
   text-align: center;
 }
@@ -834,754 +839,41 @@ div {
 }
 @-webkit-keyframes role1 {
   0% {
-    background-image: url(../hf/summer/summerRole1.png);
+    background-position: -0px -0px;
   }
-  20% {
-    background-image: url(../hf/summer/summerRole2.png);
-  }
-  40% {
-    background-image: url(../hf/summer/summerRole3.png);
-  }
-  60% {
-    background-image: url(../hf/summer/summerRole4.png);
-  }
-  80% {
-    background-image: url(../hf/summer/summerRole5.png);
-  }
+
   100% {
-    background-image: url(../hf/summer/summerRole1.png);
+    background-position: -532px -0px;
   }
 }
 @-webkit-keyframes role2 {
   0% {
-    background-image: url(../hf/autumn/autumnRole1.png);
+    background-position: -0px -0px;
   }
-  5% {
-    background-image: url(../hf/autumn/autumnRole2.png);
-  }
-  10% {
-    background-image: url(../hf/autumn/autumnRole3.png);
-  }
-  15% {
-    background-image: url(../hf/autumn/autumnRole4.png);
-  }
-  20% {
-    background-image: url(../hf/autumn/autumnRole5.png);
-  }
-  25% {
-    background-image: url(../hf/autumn/autumnRole1.png);
-  }
-  30% {
-    background-image: url(../hf/autumn/autumnRole2.png);
-  }
-  35% {
-    background-image: url(../hf/autumn/autumnRole3.png);
-  }
-  40% {
-    background-image: url(../hf/autumn/autumnRole4.png);
-  }
-  45% {
-    background-image: url(../hf/autumn/autumnRole5.png);
-  }
-  50% {
-    background-image: url(../hf/autumn/autumnRole1.png);
-  }
-  55% {
-    background-image: url(../hf/autumn/autumnRole2.png);
-  }
-  60% {
-    background-image: url(../hf/autumn/autumnRole3.png);
-  }
-  65% {
-    background-image: url(../hf/autumn/autumnRole4.png);
-  }
-  70% {
-    background-image: url(../hf/autumn/autumnRole5.png);
-  }
-  75% {
-    background-image: url(../hf/autumn/autumnRole1.png);
-  }
-  80% {
-    background-image: url(../hf/autumn/autumnRole2.png);
-  }
-  85% {
-    background-image: url(../hf/autumn/autumnRole3.png);
-  }
-  90% {
-    background-image: url(../hf/autumn/autumnRole4.png);
-  }
-  95% {
-    background-image: url(../hf/autumn/autumnRole5.png);
-  }
+
   100% {
-    background-image: url(../hf/autumn/autumnRole1.png);
+    background-position: -532px -0px;
   }
 }
 @-webkit-keyframes role3 {
   0% {
-    background-image: url(../hf/winter/winterRole1.png);
+    background-position: -0px -0px;
   }
-  7% {
-    background-image: url(../hf/winter/winterRole2.png);
-  }
-  14% {
-    background-image: url(../hf/winter/winterRole3.png);
-  }
-  21% {
-    background-image: url(../hf/winter/winterRole1.png);
-  }
-  28% {
-    background-image: url(../hf/winter/winterRole2.png);
-  }
-  35% {
-    background-image: url(../hf/winter/winterRole3.png);
-  }
-  42% {
-    background-image: url(../hf/winter/winterRole1.png);
-  }
-  49% {
-    background-image: url(../hf/winter/winterRole2.png);
-  }
-  56% {
-    background-image: url(../hf/winter/winterRole3.png);
-  }
-  63% {
-    background-image: url(../hf/winter/winterRole1.png);
-  }
-  70% {
-    background-image: url(../hf/winter/winterRole2.png);
-  }
-  77% {
-    background-image: url(../hf/winter/winterRole3.png);
-  }
-  84% {
-    background-image: url(../hf/winter/winterRole1.png);
-  }
-  91% {
-    background-image: url(../hf/winter/winterRole2.png);
-  }
-  95% {
-    background-image: url(../hf/winter/winterRole3.png);
-  }
+
   100% {
-    background-image: url(../hf/winter/winterRole1.png);
+    background-position: -532px -0px;
   }
 }
 @-webkit-keyframes role4 {
   0% {
-    background-image: url(../hf/spring/springRole1.png);
+    background-position: -0px -0px;
   }
-  5% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  10% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  15% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  20% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  25% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  30% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  35% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  40% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  45% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  50% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  55% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  60% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  65% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  70% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  75% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  80% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
-  85% {
-    background-image: url(../hf/spring/springRole3.png);
-  }
-  90% {
-    background-image: url(../hf/spring/springRole1.png);
-  }
-  95% {
-    background-image: url(../hf/spring/springRole2.png);
-  }
+
   100% {
-    background-image: url(../hf/spring/springRole3.png);
+    background-position: -532px -0px;
   }
 }
-@-webkit-keyframes role5 {
-  0% {
-    background-image: url(../images/5_ActionScript_30001.png);
-  }
-  4% {
-    background-image: url(../images/5_ActionScript_30002.png);
-  }
-  8% {
-    background-image: url(../images/5_ActionScript_30003.png);
-  }
-  12% {
-    background-image: url(../images/5_ActionScript_30004.png);
-  }
-  16% {
-    background-image: url(../images/5_ActionScript_30005.png);
-  }
-  20% {
-    background-image: url(../images/5_ActionScript_30006.png);
-  }
-  24% {
-    background-image: url(../images/5_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/5_ActionScript_30008.png);
-  }
-  32% {
-    background-image: url(../images/5_ActionScript_30009.png);
-  }
-  36% {
-    background-image: url(../images/5_ActionScript_30010.png);
-  }
-  40% {
-    background-image: url(../images/5_ActionScript_30011.png);
-  }
-  44% {
-    background-image: url(../images/5_ActionScript_30012.png);
-  }
-  48% {
-    background-image: url(../images/5_ActionScript_30013.png);
-  }
-  52% {
-    background-image: url(../images/5_ActionScript_30014.png);
-  }
-  56% {
-    background-image: url(../images/5_ActionScript_30015.png);
-  }
-  60% {
-    background-image: url(../images/5_ActionScript_30016.png);
-  }
-  64% {
-    background-image: url(../images/5_ActionScript_30017.png);
-  }
-  68% {
-    background-image: url(../images/5_ActionScript_30018.png);
-  }
-  72% {
-    background-image: url(../images/5_ActionScript_30019.png);
-  }
-  76% {
-    background-image: url(../images/5_ActionScript_30020.png);
-  }
-  80% {
-    background-image: url(../images/5_ActionScript_30021.png);
-  }
-  84% {
-    background-image: url(../images/5_ActionScript_30022.png);
-  }
-  88% {
-    background-image: url(../images/5_ActionScript_30023.png);
-  }
-  92% {
-    background-image: url(../images/5_ActionScript_30024.png);
-  }
-  96% {
-    background-image: url(../images/5_ActionScript_30025.png);
-  }
-  100% {
-    background-image: url(../images/5_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role6 {
-  0% {
-    background-image: url(../images/6_ActionScript_30001.png);
-  }
-  7% {
-    background-image: url(../images/6_ActionScript_30003.png);
-  }
-  14% {
-    background-image: url(../images/6_ActionScript_30005.png);
-  }
-  21% {
-    background-image: url(../images/6_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/6_ActionScript_30009.png);
-  }
-  35% {
-    background-image: url(../images/6_ActionScript_30011.png);
-  }
-  42% {
-    background-image: url(../images/6_ActionScript_30013.png);
-  }
-  49% {
-    background-image: url(../images/6_ActionScript_30015.png);
-  }
-  56% {
-    background-image: url(../images/6_ActionScript_30017.png);
-  }
-  63% {
-    background-image: url(../images/6_ActionScript_30019.png);
-  }
-  70% {
-    background-image: url(../images/6_ActionScript_30021.png);
-  }
-  77% {
-    background-image: url(../images/6_ActionScript_30023.png);
-  }
-  84% {
-    background-image: url(../images/6_ActionScript_30025.png);
-  }
-  91% {
-    background-image: url(../images/6_ActionScript_30027.png);
-  }
-  95% {
-    background-image: url(../images/6_ActionScript_30029.png);
-  }
-  100% {
-    background-image: url(../images/6_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role7 {
-  0% {
-    background-image: url(../images/7_ActionScript_30001.png);
-  }
-  4% {
-    background-image: url(../images/7_ActionScript_30002.png);
-  }
-  8% {
-    background-image: url(../images/7_ActionScript_30003.png);
-  }
-  12% {
-    background-image: url(../images/7_ActionScript_30004.png);
-  }
-  16% {
-    background-image: url(../images/7_ActionScript_30005.png);
-  }
-  20% {
-    background-image: url(../images/7_ActionScript_30006.png);
-  }
-  24% {
-    background-image: url(../images/7_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/7_ActionScript_30008.png);
-  }
-  32% {
-    background-image: url(../images/7_ActionScript_30009.png);
-  }
-  36% {
-    background-image: url(../images/7_ActionScript_30010.png);
-  }
-  40% {
-    background-image: url(../images/7_ActionScript_30011.png);
-  }
-  44% {
-    background-image: url(../images/7_ActionScript_30012.png);
-  }
-  48% {
-    background-image: url(../images/7_ActionScript_30013.png);
-  }
-  52% {
-    background-image: url(../images/7_ActionScript_30014.png);
-  }
-  56% {
-    background-image: url(../images/7_ActionScript_30015.png);
-  }
-  60% {
-    background-image: url(../images/7_ActionScript_30016.png);
-  }
-  64% {
-    background-image: url(../images/7_ActionScript_30017.png);
-  }
-  68% {
-    background-image: url(../images/7_ActionScript_30018.png);
-  }
-  72% {
-    background-image: url(../images/7_ActionScript_30019.png);
-  }
-  76% {
-    background-image: url(../images/7_ActionScript_30020.png);
-  }
-  80% {
-    background-image: url(../images/7_ActionScript_30021.png);
-  }
-  84% {
-    background-image: url(../images/7_ActionScript_30022.png);
-  }
-  88% {
-    background-image: url(../images/7_ActionScript_30023.png);
-  }
-  92% {
-    background-image: url(../images/7_ActionScript_30024.png);
-  }
-  96% {
-    background-image: url(../images/7_ActionScript_30025.png);
-  }
-  100% {
-    background-image: url(../images/7_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role8 {
-  0% {
-    background-image: url(../images/8_ActionScript_30001.png);
-  }
-  7% {
-    background-image: url(../images/8_ActionScript_30003.png);
-  }
-  14% {
-    background-image: url(../images/8_ActionScript_30005.png);
-  }
-  21% {
-    background-image: url(../images/8_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/8_ActionScript_30009.png);
-  }
-  35% {
-    background-image: url(../images/8_ActionScript_30011.png);
-  }
-  42% {
-    background-image: url(../images/8_ActionScript_30013.png);
-  }
-  49% {
-    background-image: url(../images/8_ActionScript_30015.png);
-  }
-  56% {
-    background-image: url(../images/8_ActionScript_30017.png);
-  }
-  63% {
-    background-image: url(../images/8_ActionScript_30019.png);
-  }
-  70% {
-    background-image: url(../images/8_ActionScript_30021.png);
-  }
-  77% {
-    background-image: url(../images/8_ActionScript_30023.png);
-  }
-  84% {
-    background-image: url(../images/8_ActionScript_30025.png);
-  }
-  91% {
-    background-image: url(../images/8_ActionScript_30027.png);
-  }
-  95% {
-    background-image: url(../images/8_ActionScript_30029.png);
-  }
-  100% {
-    background-image: url(../images/8_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role9 {
-  0% {
-    background-image: url(../images/9_ActionScript_30001.png);
-  }
-  7% {
-    background-image: url(../images/9_ActionScript_30003.png);
-  }
-  14% {
-    background-image: url(../images/9_ActionScript_30005.png);
-  }
-  21% {
-    background-image: url(../images/9_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/9_ActionScript_30009.png);
-  }
-  35% {
-    background-image: url(../images/9_ActionScript_30011.png);
-  }
-  42% {
-    background-image: url(../images/9_ActionScript_30013.png);
-  }
-  49% {
-    background-image: url(../images/9_ActionScript_30015.png);
-  }
-  56% {
-    background-image: url(../images/9_ActionScript_30017.png);
-  }
-  63% {
-    background-image: url(../images/9_ActionScript_30019.png);
-  }
-  70% {
-    background-image: url(../images/9_ActionScript_30021.png);
-  }
-  77% {
-    background-image: url(../images/9_ActionScript_30023.png);
-  }
-  84% {
-    background-image: url(../images/9_ActionScript_30025.png);
-  }
-  91% {
-    background-image: url(../images/9_ActionScript_30027.png);
-  }
-  95% {
-    background-image: url(../images/9_ActionScript_30029.png);
-  }
-  100% {
-    background-image: url(../images/9_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role10 {
-  0% {
-    background-image: url(../images/10_ActionScript_30001.png);
-  }
-  4% {
-    background-image: url(../images/10_ActionScript_30002.png);
-  }
-  8% {
-    background-image: url(../images/10_ActionScript_30003.png);
-  }
-  12% {
-    background-image: url(../images/10_ActionScript_30004.png);
-  }
-  16% {
-    background-image: url(../images/10_ActionScript_30005.png);
-  }
-  20% {
-    background-image: url(../images/10_ActionScript_30006.png);
-  }
-  24% {
-    background-image: url(../images/10_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/10_ActionScript_30008.png);
-  }
-  32% {
-    background-image: url(../images/10_ActionScript_30009.png);
-  }
-  36% {
-    background-image: url(../images/10_ActionScript_30010.png);
-  }
-  40% {
-    background-image: url(../images/10_ActionScript_30011.png);
-  }
-  44% {
-    background-image: url(../images/10_ActionScript_30012.png);
-  }
-  48% {
-    background-image: url(../images/10_ActionScript_30013.png);
-  }
-  52% {
-    background-image: url(../images/10_ActionScript_30014.png);
-  }
-  56% {
-    background-image: url(../images/10_ActionScript_30015.png);
-  }
-  60% {
-    background-image: url(../images/10_ActionScript_30016.png);
-  }
-  64% {
-    background-image: url(../images/10_ActionScript_30017.png);
-  }
-  68% {
-    background-image: url(../images/10_ActionScript_30018.png);
-  }
-  72% {
-    background-image: url(../images/10_ActionScript_30019.png);
-  }
-  76% {
-    background-image: url(../images/10_ActionScript_30020.png);
-  }
-  80% {
-    background-image: url(../images/10_ActionScript_30021.png);
-  }
-  84% {
-    background-image: url(../images/10_ActionScript_30022.png);
-  }
-  88% {
-    background-image: url(../images/10_ActionScript_30023.png);
-  }
-  92% {
-    background-image: url(../images/10_ActionScript_30024.png);
-  }
-  96% {
-    background-image: url(../images/10_ActionScript_30025.png);
-  }
-  100% {
-    background-image: url(../images/10_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role11 {
-  0% {
-    background-image: url(../images/11_ActionScript_30001.png);
-  }
-  4% {
-    background-image: url(../images/11_ActionScript_30002.png);
-  }
-  8% {
-    background-image: url(../images/11_ActionScript_30003.png);
-  }
-  12% {
-    background-image: url(../images/11_ActionScript_30004.png);
-  }
-  16% {
-    background-image: url(../images/11_ActionScript_30005.png);
-  }
-  20% {
-    background-image: url(../images/11_ActionScript_30006.png);
-  }
-  24% {
-    background-image: url(../images/11_ActionScript_30007.png);
-  }
-  28% {
-    background-image: url(../images/11_ActionScript_30008.png);
-  }
-  32% {
-    background-image: url(../images/11_ActionScript_30009.png);
-  }
-  36% {
-    background-image: url(../images/11_ActionScript_30010.png);
-  }
-  40% {
-    background-image: url(../images/11_ActionScript_30011.png);
-  }
-  44% {
-    background-image: url(../images/11_ActionScript_30012.png);
-  }
-  48% {
-    background-image: url(../images/11_ActionScript_30013.png);
-  }
-  52% {
-    background-image: url(../images/11_ActionScript_30014.png);
-  }
-  56% {
-    background-image: url(../images/11_ActionScript_30015.png);
-  }
-  60% {
-    background-image: url(../images/11_ActionScript_30016.png);
-  }
-  64% {
-    background-image: url(../images/11_ActionScript_30017.png);
-  }
-  68% {
-    background-image: url(../images/11_ActionScript_30018.png);
-  }
-  72% {
-    background-image: url(../images/11_ActionScript_30019.png);
-  }
-  76% {
-    background-image: url(../images/11_ActionScript_30020.png);
-  }
-  80% {
-    background-image: url(../images/11_ActionScript_30021.png);
-  }
-  84% {
-    background-image: url(../images/11_ActionScript_30022.png);
-  }
-  88% {
-    background-image: url(../images/11_ActionScript_30023.png);
-  }
-  92% {
-    background-image: url(../images/11_ActionScript_30024.png);
-  }
-  96% {
-    background-image: url(../images/11_ActionScript_30025.png);
-  }
-  100% {
-    background-image: url(../images/11_ActionScript_30001.png);
-  }
-}
-@-webkit-keyframes role12 {
-  0% {
-    background-image: url(../images/12_ActionScript_30001.png);
-  }
-  4% {
-    background-image: url(../images/12_ActionScript_30003.png);
-  }
-  8% {
-    background-image: url(../images/12_ActionScript_30005.png);
-  }
-  12% {
-    background-image: url(../images/12_ActionScript_30007.png);
-  }
-  16% {
-    background-image: url(../images/12_ActionScript_30009.png);
-  }
-  20% {
-    background-image: url(../images/12_ActionScript_30011.png);
-  }
-  24% {
-    background-image: url(../images/12_ActionScript_30013.png);
-  }
-  28% {
-    background-image: url(../images/12_ActionScript_30015.png);
-  }
-  32% {
-    background-image: url(../images/12_ActionScript_30017.png);
-  }
-  36% {
-    background-image: url(../images/12_ActionScript_30019.png);
-  }
-  40% {
-    background-image: url(../images/12_ActionScript_30021.png);
-  }
-  44% {
-    background-image: url(../images/12_ActionScript_30023.png);
-  }
-  48% {
-    background-image: url(../images/12_ActionScript_30025.png);
-  }
-  52% {
-    background-image: url(../images/12_ActionScript_30027.png);
-  }
-  56% {
-    background-image: url(../images/12_ActionScript_30029.png);
-  }
-  60% {
-    background-image: url(../images/12_ActionScript_30031.png);
-  }
-  64% {
-    background-image: url(../images/12_ActionScript_30033.png);
-  }
-  68% {
-    background-image: url(../images/12_ActionScript_30035.png);
-  }
-  72% {
-    background-image: url(../images/12_ActionScript_30037.png);
-  }
-  76% {
-    background-image: url(../images/12_ActionScript_30039.png);
-  }
-  80% {
-    background-image: url(../images/12_ActionScript_30041.png);
-  }
-  84% {
-    background-image: url(../images/12_ActionScript_30043.png);
-  }
-  88% {
-    background-image: url(../images/12_ActionScript_30045.png);
-  }
-  92% {
-    background-image: url(../images/12_ActionScript_30047.png);
-  }
-  96% {
-    background-image: url(../images/12_ActionScript_30049.png);
-  }
-  100% {
-    background-image: url(../images/12_ActionScript_30001.png);
-  }
-}
+spring
 /*====流星雨动效====*/
 .ostars {
   position: absolute;

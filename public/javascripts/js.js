@@ -31,7 +31,7 @@ function startAct(){
         $(".text1 p").addClass("fadeInUp animated2");
     },1000);
     setTimeout(function(){
-        $(".starBtn").css({"top":"10%","opacity":"1"});
+        // $(".starBtn").css({"top":"10%","opacity":"1"});
         $(".role").css({"transform":"scale(1)","opacity":"1"});
     },2000);
 
